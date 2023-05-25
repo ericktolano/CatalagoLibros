@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="265.0" prefWidth="796.0" style="-fx-background-color: red;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tolano.catalagolibros.CatalagoController">
+   <VBox layoutX="26.0" layoutY="22.0" spacing="15.0">
+      <Label style="-fx-background-size: red;" text="Id">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label text="Título">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label text="Autor">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label text="Año">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label text="Pag.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </VBox>
+   <VBox layoutX="87.0" layoutY="22.0" prefHeight="130.0" prefWidth="129.0" spacing="10.0">
+      <TextField fx:id="campoId" style="-fx-background-color: pink;" />
+      <TextField fx:id="campoTitulo" style="-fx-background-color: pink;" />
+      <TextField fx:id="campoAutor" style="-fx-background-color: pink;" />
+      <TextField fx:id="campoAnio" style="-fx-background-color: pink;" />
+      <TextField fx:id="campoPaginas" style="-fx-background-color: pink;" />
+   </VBox>
+   <HBox layoutX="26.0" layoutY="202.0" spacing="10.0">
+      <Button fx:id="botonInsert" mnemonicParsing="false" onAction="#botonInsert" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: yellow;" text="Agrega" />
+      <Button fx:id="botonUpdate" mnemonicParsing="false" onAction="#botonUpdate" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: yellow;" text="Actualiza" />
+      <Button fx:id="botonDelete" mnemonicParsing="false" onAction="#botonDelete" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: yellow;" text="Borra" />
+   </HBox>
+   <TableView fx:id="tablaLibros" layoutX="252.0" layoutY="22.0" prefHeight="210.0" prefWidth="551.0" style="-fx-background-color: green;">
+      <columns>
+         <TableColumn fx:id="columnaId" prefWidth="70" text="Id" />
+         <TableColumn fx:id="columnaTitulo" prefWidth="160" text="Título" />
+         <TableColumn fx:id="columnaAutor" prefWidth="180" text="Autor" />
+         <TableColumn fx:id="columnaAnios" prefWidth="70" text="Año" />
+         <TableColumn fx:id="columnaPaginas" prefWidth="70" text="Pag." />
+      </columns>
+   </TableView>
+</AnchorPane>
